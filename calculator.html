@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <table class="calculatorMain">
+        <caption>
+            <input type="text" value="0" readonly id="result">
+            <tr>
+                <td><input type="button" id="clearbtn" value="Cl" onclick="clearval()" ></td>
+                <td><input type="button" id="sqrbtn" value="x&sup2;" onclick="result('sqr')" ></td>
+                <td><input type="button" id="percbtn" value="%" onclick="operationPerform('perc')" ></td>
+                <td><input type="button" id="divbtn" value="/" onclick="operationPerform('/')" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="sevenbtn" value="7" onclick="numberClicked(7)" ></td>
+                <td><input type="button" id="eightbtn" value="8" onclick="numberClicked(8)" ></td>
+                <td><input type="button" id="ninebtn" value="9" onclick="numberClicked(9)" ></td>
+                <td><input type="button" id="multibtn" value="*" onclick="operationPerform('*')" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="fourbtn" value="4" onclick="numberClicked(4)" ></td>
+                <td><input type="button" id="fivebtn" value="5" onclick="numberClicked(5)" ></td>
+                <td><input type="button" id="sixbtn" value="6" onclick="numberClicked(6)" ></td>
+                <td><input type="button" id="subbtn" value="-" onclick="operationPerform('-')" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="onerbtn" value="1" onclick="numberClicked(1)" ></td>
+                <td><input type="button" id="twobtn" value="2" onclick="numberClicked(2)" ></td>
+                <td><input type="button" id="threebtn" value="3" onclick="numberClicked(3)" ></td>
+                <td><input type="button" id="addbtn" value="+" onclick="operationPerform('+')" ></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="" value="" onclick="numberClicked(1)" ></td>
+                <td><input type="button" id="zerobtn" value="0" onclick="numberClicked(0)" ></td>
+                <td><input type="button" id="decimalbtn" value="." onclick="numberClicked('.')" ></td>
+                <td><input type="button" id="resultbtn" value="=" onclick="result()" ></td>
+            </tr>
+        </caption>
+    </table>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>

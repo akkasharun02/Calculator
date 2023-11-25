@@ -1,0 +1,27 @@
+.calculatorMain{
+    width: 95%;
+    border-collapse: collapse;
+    border: 0.1em solid black;
+    margin-left: 2.5%;
+    background-color: black;
+
+}
+caption{
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    background-color: black;
+
+}
+caption input{
+    text-align: right;
+}
+th,td{
+    text-align: center;
+    border: 0.1em solid black;
+    padding: 0.5em;
+}
+input{
+    width: 95%;
+    height: 2.5em;
+    font-size: 2em;
+}
